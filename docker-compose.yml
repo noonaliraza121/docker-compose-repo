@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+  ub_cont_frm_do_f1:
+    build:
+      context: .
+      dockerfile: Dockerfile1
+    tty: true
+  reg_cont_frm_do_f2:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    ports:
+      - "3030:5000"
+
